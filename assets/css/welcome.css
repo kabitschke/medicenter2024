@@ -1,0 +1,158 @@
+.medicenter {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+/*Área Left*/
+
+
+.container-left {
+    height: 550px;
+    position: relative;
+}
+
+.container-left figure {
+    position: absolute;
+}
+
+.container-left figure img {
+    display: block;
+    width: 320px;
+    height: 460px;
+}
+
+
+.container-left figure#img1 {
+    top: 50px;
+    left: 0px;
+    z-index: 1;
+}
+
+.container-left figure#img2 {
+    top: 0;
+    right: 0;
+}
+
+
+/*Area Right*/
+
+.container-right h3 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.container-right h3::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: #42B3E5;
+    margin-top: 7px;
+
+}
+
+.container-right h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 30px;
+    line-height: 1.4;
+    font-weight: normal;
+}
+
+.container-right p,
+span {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    color: #666;
+    line-height: 1.7;
+    font-weight: normal;
+}
+
+.container-right li {
+    position: relative;
+    /* Define o contexto de posicionamento para o ícone */
+    display: flex;
+    align-items: start;
+}
+
+.container-right li::before {
+    content: "\2713";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    /* Posiciona o ícone em relação ao pai com position: relative */
+    top: 10px;
+    left: 0;
+    /* Coloca o ícone à esquerda do conteúdo do li */
+    font-family: "Open Sans", sans-serif;
+    font-size: 19px;
+    text-align: center;
+    color: #42B3E5;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 100%;
+}
+
+
+.container-right span {
+    padding: 8px 0 7px 50px
+}
+
+
+/*Responsivo*/
+
+@media (max-width: 1200px) {
+    .container-left figure img {
+        width: 256px;
+        height: 368px;
+    }
+
+    .container-left figure#img2 {
+        top: 0;
+        right: 0;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    .container-left figure img {
+        width: 192px;
+        height: 276px;
+    }
+
+    /*Área Right*/
+    .container-right h3 {
+        font-size: 16px !important;
+    }
+
+    .container-right h2 {
+        font-size: 24px !important;
+    }
+
+    .container-right span {
+        font-size: 13px !important;
+    }
+
+}
+
+
+@media (max-width:770px) {
+    .medicenter {
+        grid-template-columns: 1fr;
+    }
+
+    .container-left {
+        height: 400px;
+    }
+
+    .container-left figure img {
+        width: 256px;
+        height: 368px;
+    }
+}
+
+
+/* O problema que você está enfrentando ocorre porque max-width: 80% faz com que a largura da imagem seja calculada como 80% do contêiner pai (.container-left), o que pode deixar espaço à direita da imagem, mesmo que você tenha definido right: 0. Isso acontece porque o tamanho da imagem não ocupa 100% da largura do contêiner.
+
+Para resolver isso, uma abordagem é usar width: 80% em vez de max-width: 80% e ajustar a posição da imagem para garantir que ela permaneça à direita. */
