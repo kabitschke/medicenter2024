@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
+    padding-bottom: 50px;
 }
 
 /*Área Left*/
@@ -153,6 +154,7 @@ span {
 }
 
 
-/* O problema que você está enfrentando ocorre porque max-width: 80% faz com que a largura da imagem seja calculada como 80% do contêiner pai (.container-left), o que pode deixar espaço à direita da imagem, mesmo que você tenha definido right: 0. Isso acontece porque o tamanho da imagem não ocupa 100% da largura do contêiner.
+/* O problema que você está enfrentando ocorre porque max-width: 80% faz com que a largura da imagem seja calculada como 80% do contêiner pai (.container-left), 
+o que pode deixar espaço à direita da imagem, mesmo que você tenha definido right: 0. Isso acontece porque o tamanho da imagem não ocupa 100% da largura do contêiner.
 
 Para resolver isso, uma abordagem é usar width: 80% em vez de max-width: 80% e ajustar a posição da imagem para garantir que ela permaneça à direita. */
