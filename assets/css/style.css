@@ -4,6 +4,7 @@
 @import "parallax.css";
 @import "contactUS.css";
 @import "texto.css";
+@import "services.css";
  html {
     height: 100%;
   }
@@ -32,9 +33,23 @@ a {
     margin: 0;
 }
 
+.btn-service{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-service a{
+    padding: 20px 40px;
+    background-color: #42B3E5;
+    text-transform: uppercase;
+    color: #FFF;
+    font-family: "Open Sans", sans-serif;
+}
+
 .container {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto;   
 
 }
 
