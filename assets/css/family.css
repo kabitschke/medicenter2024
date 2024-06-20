@@ -1,0 +1,49 @@
+.family{
+    display: flex;
+    max-width: 1552px;
+    gap: 100px;
+   
+}
+
+
+
+.family-left img{
+    width: 860px;
+    height: 750px;
+}
+
+
+
+.family-right{
+    width: 590px;
+    background-color: #666666;
+}
+
+.family-right h3,h2,p{
+    font-family: "Open Sans", sans-serif;    
+}
+
+.family-right h3{
+    font-size: 18px;
+    font-weight: 500;   
+}
+
+.family-right h3::after{
+    content: "";
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: #42b3e5;
+    margin-top: 7px;
+  
+}
+
+.family-right h2{
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.family-right p{
+    font-size: 16px;   
+    color: #666666;
+}
