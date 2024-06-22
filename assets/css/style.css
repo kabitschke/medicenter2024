@@ -6,8 +6,10 @@
 @import "texto.css";
 @import "services.css";
 @import "family.css";
+@import "medicenter-care.css";
+
  html {
-    height: 100%;
+    height: 100%;   
   }
 
 body {
@@ -58,6 +60,7 @@ a {
 .container {
     max-width: 1200px;
     margin: 0 auto;       
+  
 
 }
 

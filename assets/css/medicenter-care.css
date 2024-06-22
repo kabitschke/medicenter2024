@@ -1,0 +1,65 @@
+.medicenter-care{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  
+    gap: 0;
+}
+
+
+    .medicenter-care-left{
+        margin-top: 150px;             
+        margin-left: 320px;
+        max-width: 60%;
+        background-color: antiquewhite;
+       
+
+
+        
+    }
+
+    .area2--img2{            
+        background-image: url('../img/mulherPraia.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+
+
+.itens{
+    display: flex;
+    justify-content: space-between;
+}
+
+.medicenter-care-left h3,h2,p,small{
+    font-family: "Open Sans", sans-serif;    
+}
+
+.medicenter-care-left h3{
+    font-size: 18px;
+    font-weight: 500;   
+}
+
+.medicenter-care-left h3::after{
+    content: "";
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: #42b3e5;
+    margin-top: 7px;
+  
+}
+
+.medicenter-care-left h2{
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.medicenter-care-left p{
+    font-size: 16px;   
+    color: #666666;
+}
+
+.medicenter-care-left small{
+    font-size: 16px;
+    font-weight: 500;
+}
