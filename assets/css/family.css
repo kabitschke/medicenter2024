@@ -1,29 +1,29 @@
-.family{
-    /*1552*/
+
+
+.family{  
+    width: calc(50% + 600px);
     display: grid;
-    grid-template-columns: repeat(2, 1fr);  
-    gap: 0;
-    
-   
+    grid-template-columns: 1.5fr 1fr;   
+  
+  
 }
 
 
-.area1--img1{    
+.area1--img1{      
     background-image: url('../img/mulherbebe.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
 }
 
 
 
-.family-right{
+.family-right{    
     margin-top: 50px;
-    margin-bottom: 100px;
-    max-width: 50%;
-    margin-left: 100px;
-    padding: 0 11px;
-    background-color: antiquewhite;
+    margin-bottom: 200px;    
+    margin-left: 100px;    
+   
 }
 
 .family-right h3,h2,p,small{
