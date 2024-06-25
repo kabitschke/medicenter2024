@@ -8,9 +8,9 @@
 @import "family.css";
 @import "medicenter-care.css";
 
- html {
-    height: 100%;   
-  }
+html {
+    height: 100%;
+}
 
 body {
     margin: 0;
@@ -36,14 +36,14 @@ a {
     margin: 0;
 }
 
-.btn-service{
+.btn-service {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-bottom: 100px;
 }
 
-.btn-service a{
+.btn-service a {
     padding: 20px 40px;
     background-color: #42B3E5;
     text-transform: uppercase;
@@ -51,17 +51,17 @@ a {
     font-family: "Open Sans", sans-serif;
 }
 
-.background{
+.background {
     background-color: #f8f8f8;
-    
-   
+
+
 }
 
 .container {
     max-width: 1200px;
-    margin: 0 auto;  
-        
-  
+    margin: 0 auto;
+
+
 
 }
 
@@ -83,7 +83,7 @@ a {
 @media (max-width:770px) {
     .container {
         max-width: 470px !important;
-        
+
 
     }
 
