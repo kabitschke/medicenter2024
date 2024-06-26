@@ -5,8 +5,10 @@
 @import "contactUS.css";
 @import "texto.css";
 @import "services.css";
-@import "family.css";
-@import "medicenter-care.css";
+@import "medicenter-family.css";
+@import "medicenter-family-right.css";
+@import "medicenter-family-left.css";
+@import "brands.css";
 
 html {
     height: 100%;
@@ -53,16 +55,11 @@ a {
 
 .background {
     background-color: #f8f8f8;
-
-
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
-
-
-
 }
 
 @media (max-width:1200px) {
