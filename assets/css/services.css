@@ -1,29 +1,34 @@
-.services-list{
+.services-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     padding-bottom: 100px;
 }
 
-.services-area{
-    background-color: #f0f0f0;
-}
-
-.services-list img{
+.services-list img {
     display: block;
     max-width: 100%;
     height: auto;
-    
 }
 
-.services-list h3{
+.services-area {
+    padding: 30px;
+    background-color: #f0f0f0;
+    border-left: 1px solid #e5e5e5;
+}
+
+.services-area:first-child {
+    border: none;
+}
+
+
+.services-list h3 {
     font-family: "Open Sans", sans-serif;
     font-size: 18px;
-    padding: 17px 40px 0 40px;
+    margin: 0;
 }
 
 .services-list p {
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
-    padding: 17px 40px 20px 40px;
     color: #666666;
 }
