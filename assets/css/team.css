@@ -1,0 +1,141 @@
+.team{
+    margin-top: 70px;
+}
+
+.team p,h3,h4,h5{
+    font-family: "Open Sans", sans-serif;    
+}
+
+.team h3{
+    text-align: center;
+    font-size: 30px;
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+.team h3::after{
+    content: "";
+    display: block;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 50px;
+    height: 2px;
+    background-color: #42b3e5;
+}
+
+.team p{
+    font-size: 16px;
+    line-height: 1.7;
+    color: #666666;   
+}
+
+.controls{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 20px 0;
+}
+.control-left, .control-right{
+    display: flex;              
+    justify-content: center;   
+    align-items: center; 
+    border: 1px solid #e5e5e5;
+    width: 28px;
+    height: 28px; 
+    color: #777;
+    font-size: 10px;    
+    cursor: pointer;    
+}
+
+.control-left:hover, .control-right:hover {
+    border: 1px solid #42b3e5;   
+}
+
+.team-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;    
+}
+
+.team-list img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    transition: all 0.3s ease;
+}
+.team-carrossel .team-list .item {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.team-description{
+    background-color: #f0f0f0;
+    padding: 20px 0;     
+    transition: all 0.3s ease;   
+}
+
+.team-carrossel .team-list .item:hover img {/*efeito de hover simultaneo*/
+    opacity: 0.8;
+}
+
+.team-carrossel .team-list .item:hover .team-description {/*efeito de hover simultaneo*/
+    background-color: #42b3e5;
+}
+
+.team-carrossel .team-list .item:hover .team-detail {/*efeito de hover simultaneo*/
+    border-bottom: 1px solid #42b3e5;
+}
+
+.team-description h4, h5{
+    text-align: center; 
+    margin: 0;    
+}
+
+.team-description h4{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.6;    
+}
+
+.team-description h4 a{
+    color: #000;
+}
+
+.team-description h5,p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7;
+    margin-top: 7px;
+    color: #666666;
+    text-align: center;
+}
+
+.team-detail{
+    transition: all 0.3s ease;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.team-social{
+    display: flex;
+    margin-top: 20px;    
+    gap: 10px;  
+}
+
+.team-social li{
+    padding: 15px;
+    background-color: #f0f0f0;
+}
+
+.team-social i{
+    color: #777;
+}
+
+.team-social li:hover {/*efeito de hover simultaneo*/
+    background-color: #42b3e5;
+}
+
+.team-social li:hover i {/*efeito de hover simultaneo*/
+    color: #FFF;
+}
