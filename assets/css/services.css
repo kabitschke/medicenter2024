@@ -10,16 +10,19 @@
     height: auto;
 }
 
+.services-list img:hover{
+    opacity: 0.8;
+}
+
 .services-area {
     padding: 30px;
     background-color: #f0f0f0;
     border-left: 1px solid #e5e5e5;
 }
 
-.services-area:first-child {
-    border: none;
+.services-list li:first-child .services-area{
+    border-left: none;
 }
-
 
 .services-list h3 {
     font-family: "Open Sans", sans-serif;

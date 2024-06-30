@@ -1,21 +1,9 @@
-/* .parallax {
-    height: 600px;    
-    background-image: url('../img/mulherSorrindo.jpg');    
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-   background: rgba(77, 91, 121, 0.3); 
-  } */
-
-
   .parallax {
     position: relative;
     height: 600px;
     background-image: url('../img/mulherSorrindo.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
@@ -27,18 +15,14 @@
     left: 0;
     width: 100%;
     height: 100%;
-    /* background: rgba(77, 91, 121, 0.2);  Cor escura com transparência */
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(77, 91, 121, 0.2);      
   }
-  
-  
-
-
   .area{   
     display: flex;
     justify-content: space-around;
     align-items: center;    
     height: 100%;
+    position: relative; /*texto mais nítido*/
   }
 
   .area-text{
@@ -48,19 +32,15 @@
   .area span{
     font-family: "Open Sans", sans-serif;
     font-size: 46px;
-    color: #FFF;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    font-weight: 400;
-    
+    color: #FFF;    
+    font-weight: 400;    
   }
 
   .area p{
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
     font-weight: 500;
-    color: #FFF;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    color: #FFF;    
     letter-spacing: 1px;
-    margin: 0;
-    
+    margin: 0;    
   }
