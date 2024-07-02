@@ -1,9 +1,47 @@
-.header-area{
-  position: fixed;
-  top: 0;
+.header-background{
+  background-color: #f8f8f8;
+  padding: 20px 0;
+}
+
+.header-contato {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-1, .header-2{
+  display: flex;
+  align-items: center;
+  gap: 20px;  
+}
+
+.header-1 i{
+  padding-right: 10px;
+  color: #999;
+}
+
+.header-1 a, .header-1 li{
+  font-family: "Source Sans 3", sans-serif;
+  color: #999;
+}
+
+.header-2 i {
+  color: #999;
+}
+
+.header-2 li:nth-child(3){
+  padding-right: 20px;
+  border-right: 1px solid #999;
+}
+
+.header-area{ 
   width: 100%;
   background: #FFF;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+.header-area-fixed{
+  position: fixed;
+  top: 0;
   z-index: 999;
 }
 
@@ -35,23 +73,15 @@
 .menu-desk {
   display: flex;
   align-items: center;
-
+  font-size: 14px; 
+  color: #666666;
 }
 
-.menu-list .menu-desk::after {
-  content: '';
-  width: 10px;
-  height: 10px;
-  background-image: url('../img/setaDown.svg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  margin-left: 8px;
-
+.menu-desk i{
+  color: #666666;
+  font-size: 8px;
+  padding-left: 10px;
 }
-
-
-
-
 .menu-list li {
   padding: 8px;
   border: 1px solid transparent;
@@ -81,7 +111,7 @@
   z-index: -1;
   position: absolute;
   right: 0px;
-  top: 39px;
+  top: 35px;
   border: 1px solid #E5E5E5;
   min-width: 150px;
   font-family: "Open Sans", sans-serif;

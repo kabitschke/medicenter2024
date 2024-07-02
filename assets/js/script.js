@@ -29,13 +29,24 @@ menu.addEventListener('transitionend', () => {
 });
 
 
-// document.getElementById("shop").addEventListener("mouseenter", function() {
-//   document.querySelector(".submenu").classList.add("show");
-// });
+// Função para monitorar o scroll da página
+function monitorarScroll() {
+    // Obtém a posição atual do scroll vertical
+    let scrollTop = window.scrollY;
+    let header = document.querySelector(".header-area");
+    // console.log('Scroll from the top: ' + scrollTop + 'px');
+    
 
-// document.querySelector(".submenu").addEventListener("mouseleave", function() {
-//   this.classList.remove("show");
-// });
+    if (scrollTop > 100) {
+        header.classList.add("header-area-fixed");
+    }else{
+        header.classList.remove("header-area-fixed");
+    }
+}
+
+// Adiciona um event listener para o evento 'scroll' do objeto window
+window.addEventListener('scroll', monitorarScroll);
+
 
 
 
