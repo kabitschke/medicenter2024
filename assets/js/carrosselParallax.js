@@ -17,8 +17,8 @@ document.addEventListener("DOMContentLoaded", function() {
         showItem(currentIndex);
     }
 
-    const controlLeft = document.querySelector('.control-left');
-    const controlRight = document.querySelector('.control-right');
+    const controlLeft = document.querySelector('.control-left-parallax');
+    const controlRight = document.querySelector('.control-right-parallax');
 
     controlLeft.addEventListener('click', prevItem);
     controlRight.addEventListener('click', nextItem);

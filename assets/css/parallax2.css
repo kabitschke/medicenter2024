@@ -9,9 +9,19 @@
   background-attachment: fixed;
 }
 
+.parallax2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(77, 91, 121, 0.2);      
+}
+
 .parallax2-area {
   display: flex;
-  overflow: hidden; /* Oculta conteúdo fora do contêiner */
+  overflow-x: hidden;
   position: relative;
   height: 100%;
 }
@@ -26,6 +36,8 @@
 
 .parallax2-item.active {
   opacity: 1;
+  position: absolute;
+  left: 0;
 }
 
 .parallax2 .area {
@@ -46,19 +58,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid rgba(255,255,255,0.8);
-    width: 28px;
-    height: 28px;
+    border: 1px solid rgba(255,255,255,0.6);
+    width: 32px;
+    height: 32px;
     color: #FFF;
     font-size: 10px;
     cursor: pointer;
+    z-index: 10;
 }
 
- .control-left-parallax:hover {
-    border: 1px solid red !important;
+ .control-left-parallax:hover,
+ .control-right-parallax:hover  {
+    border: 1px solid #FFF;
 }
-
-
 
 .parallax2 .area h3,
 .parallax2 .area cite {
